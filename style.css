@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+
+    background-color: hsl(275, 100%, 97%);
+
+    font-family: 'WorkSans';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+}
+
+.faq-container {
+    width: 530px;
+    height: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    border-radius: 8px;
+    padding: 36px;
+
+    box-shadow: 0 0 35px 10px hsla(0, 0%, 10%, 0.1);
+}
+
+.faq-container h1 {
+
+    font-size: 46px;
+    font-weight: 700;
+
+    margin-bottom: 24px;
+}
+
+.faq-container h1::before {
+    content: url('./assets/images/icon-star.svg') " ";
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+    margin-right: 16px;
+    top: 5px;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    cursor: pointer;
+}
+
+.question P {  
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button-plus {
+    min-width: 30px;
+    height: 30px;
+    background-image: url('./assets/images/icon-plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-plus.active {
+    background-image: url('./assets/images/icon-minus.svg');
+}
+
+.question:hover {
+    color: hsl(281, 83%, 54%);
+}
+
+.answer {
+
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: hsl(0, 0%, 51%);
+}
+
+.answer.active {
+    display: inline;
+}
+
+.line-stroke {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 20% 5%;
+    }
+    
+    .faq-container {
+        width: auto;
+    }
+
+    .faq-container h1 {
+        font-size: 32px;
+    }
+
+    .question p {
+        font-size: 14px;
+    }
+
+    .answer {
+        font-size: 10px;
+    }
+}
