@@ -25,9 +25,9 @@ Users will be able to:
 
 ### Screenshot
 
-(./Screenshoot/web-desktop-preview.png)
-(./Screenshoot/web-mobile-preview.png)
-(./Screenshoot/active-states.png)
+![](./Screenshoot/web-desktop-preview.png)
+![](./Screenshoot/web-mobile-preview.png)
+![](./Screenshoot/active-states.png)
 
 ### Links
 
